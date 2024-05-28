@@ -20,4 +20,6 @@ add_executable(main
                src/queue.c
                src/circular_queue.c
                src/linked_list.c
+               src/str.c
+               src/hash_functions.c
                )
