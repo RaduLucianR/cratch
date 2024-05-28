@@ -17,4 +17,5 @@ include_directories(include)
 add_executable(main
                src/main.c
                src/stack.c
+               src/queue.c
                )
