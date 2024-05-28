@@ -1,10 +1,8 @@
 /*
 @author Radu Lucian Radulescu
 
-Simple Queue data structure.
+Simple fixed-size Queue data structure.
 
-All operations are O(1), but pop is O(n) because
-the entire queue must be shifted by 1.
 */
 #include <stdbool.h>
 
@@ -14,7 +12,7 @@ struct Queue {
     int * array;
 };
 
-struct Queue * createQueue(unsigned size);
+struct Queue * queue_create(unsigned size);
 void queue_add(struct Queue * queue, int value);
 bool queue_isEmpty(struct Queue * queue);
 bool queue_isFull(struct Queue * queue);
