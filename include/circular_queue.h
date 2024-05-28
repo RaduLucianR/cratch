@@ -22,3 +22,4 @@ void circq_pop(struct CircQ * circq);
 int circq_get(struct CircQ * circq);
 int circq_peek(struct CircQ * circq);
 void circq_print(struct CircQ * circq);
+void circq_print_array(struct CircQ * circq);

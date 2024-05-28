@@ -59,6 +59,32 @@ void circq_pop(struct CircQ * circq)
     circq->count -= 1;
 }
 
+int circq_peek(struct CircQ * circq)
+{
+    if (circq_isEmpty(circq) == 1) 
+    {
+        printf("Circular queue is empty, nothing to see!\n");
+        return;
+    } 
+
+    return circq->array[circq->head];
+}
+
+int circq_get(struct CircQ * circq)
+{
+    if (circq_isEmpty(circq) == 1) 
+    {
+        printf("Circular queue is empty, nothing to give!\n");
+        return;
+    } 
+
+    int current_head = circq->array[circq->head];
+
+    circq_pop(circq);
+
+    return current_head;
+}
+
 void circq_print_array(struct CircQ * circq)
 {
     if (circq_isEmpty(circq) == 1) 
