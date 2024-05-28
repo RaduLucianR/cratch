@@ -95,7 +95,7 @@ int stack_peek(struct Stack * stack)
 {
     if (stack_isEmpty(stack) == 1) {
         printf("Stack is empty, nothing to see!\n");
-        return;
+        return 1;
     }
 
     return stack->array[stack->top];

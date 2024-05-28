@@ -19,4 +19,5 @@ add_executable(main
                src/stack.c
                src/queue.c
                src/circular_queue.c
+               src/linked_list.c
                )

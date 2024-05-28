@@ -60,7 +60,7 @@ int queue_get(struct Queue * queue)
     if (queue_isEmpty(queue) == 1) 
     {
         printf("Queue is empty, nothing to give!\n");
-        return;
+        return 1;
     } 
 
     int current_head = queue->array[0];
@@ -75,7 +75,7 @@ int queue_peek(struct Queue * queue)
     if (queue_isEmpty(queue) == 1) 
     {
         printf("Queue is empty, nothing to see!\n");
-        return;
+        return 1;
     } 
 
     return queue->array[0];
