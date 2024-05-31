@@ -23,3 +23,7 @@ add_executable(main
                src/str.c
                src/hash_functions.c
                )
+
+add_executable(practice
+               practice/str_practice.c
+               )
