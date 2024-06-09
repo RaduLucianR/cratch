@@ -8,10 +8,10 @@
 /**
  * From here: https://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200101/homework10/hashfuncs.html
 */
-unsigned int crc_hash(char * string)
+unsigned int crc_hash(char * string, unsigned int table_size)
 {
     unsigned int h = 0;
-    unsigned int m = 97; // Size of the hash table
+    unsigned int m = table_size; // Size of the hash table
     unsigned int highorder = h & 0xf8000000;
     unsigned int str_length;
 

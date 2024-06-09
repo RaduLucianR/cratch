@@ -22,6 +22,7 @@ add_executable(main
                src/linked_list.c
                src/str.c
                src/hash_functions.c
+               src/array_map.c
                )
 
 add_executable(practice
