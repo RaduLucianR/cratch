@@ -9,6 +9,7 @@ int main()
   arraymap_put(arraymap, "s", "abc");
   char * res = arraymap_get(arraymap, "s");
   printf("%s", res);
+  printf("testttttt");
 
   printf("\n");
   return 0;
